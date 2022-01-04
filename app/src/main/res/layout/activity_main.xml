@@ -11,27 +11,30 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/idBtnSubmit"
+        android:layout_width="192dp"
+        android:layout_height="48dp"
         android:onClick="openActivity2"
         android:text="submit"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.611" />
+        app:layout_constraintVertical_bias="0.774" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="150dp"
         android:layout_marginTop="292dp"
         android:layout_marginBottom="1dp"
-        app:layout_constraintBottom_toTopOf="@+id/submit"
+        app:layout_constraintBottom_toTopOf="@+id/idBtnSubmit"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:id="@+id/textView1"
@@ -60,40 +63,44 @@
             app:layout_constraintVertical_bias="0.897">
 
             <Button
-                android:id="@+id/A"
+                android:id="@+id/idBtnA"
                 android:layout_width="40dp"
                 android:layout_height="48dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
-                android:text="A" />
+                android:text="A"
+                android:textSize="16sp" />
 
             <Button
-                android:id="@+id/B"
+                android:id="@+id/idBtnB"
                 android:layout_width="40dp"
                 android:layout_height="48dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
-                android:text="@string/b" />
+                android:text="@string/b"
+                android:textSize="16sp" />
 
             <Button
-                android:id="@+id/C"
+                android:id="@+id/idBtnC"
                 android:layout_width="40dp"
                 android:layout_height="48dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
-                android:text="@string/c" />
+                android:text="@string/c"
+                android:textSize="16sp" />
 
             <Button
-                android:id="@+id/D"
+                android:id="@+id/idBtnD"
                 android:layout_width="40dp"
                 android:layout_height="48dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
-                android:text="@string/d" />
+                android:text="@string/d"
+                android:textSize="16sp" />
         </LinearLayout>
 
         <TextView
@@ -111,5 +118,14 @@
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
