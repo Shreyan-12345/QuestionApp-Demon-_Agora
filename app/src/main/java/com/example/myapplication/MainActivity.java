@@ -30,9 +30,27 @@ public class MainActivity extends AppCompatActivity {
         oB = findViewById(R.id.idoB);
         oC = findViewById(R.id.idoC);
         oD = findViewById(R.id.idoD);
+        setQuizQuestion();
     }
     public void openActivity2(View view) {
         Intent intent=new Intent(this, MainActivity2.class);
         startActivity(intent);
+    }
+    private void setDataToViews() {
+        QuestionNumberTV.setText("Q"+QuestionNumber);
+        QuestionTV.setText(list.get(QuestionNumber-1).getQuestion());
+        oA.setText(list.get(QuestionNumber-1).getOptionA());
+        oB.setText(list.get(QuestionNumber-1).getOptionB());
+        oC.setText(list.get(QuestionNumber-1).getOptionC());
+        oD.setText(list.get(QuestionNumber-1).getOptionD());
+    }
+    private void setQuizQuestion() {
+        list.add(new QuizModal("This is the first Question","kya","likhu","main","idhar",4));
+        list.add(new QuizModal("This is the second Question","kuch","bhi","likh","du ?",4));
+        list.add(new QuizModal("","","","","",4));
+        list.add(new QuizModal("","","","","",4));
+        list.add(new QuizModal("","","","","",4));
+        list.add(new QuizModal("","","","","",4));
+        list.add(new QuizModal("","","","","",4));
     }
 }
